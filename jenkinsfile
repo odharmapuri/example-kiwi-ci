@@ -1,16 +1,10 @@
 pipeline {
     agent any
-    tools {
-        maven 'MAVEN_HOME'
-        jdk 'JAVA_HOME'
-    }
-    environment {
 
-    }
     stages {
         stage ('git clone') {
             steps {
-                
+                https://github.com/odharmapuri2/kiwi-ci.git
             }
         }
     }
